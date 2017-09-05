@@ -1,0 +1,27 @@
+/*
+------------------------------------------------------------------------
+| pal grupo                                                            |
+------------------------------------------------------------------------
+|creacion 5/09/2017                                                    |
+------------------------------------------------------------------------
+*/
+.fondo{
+  background-color: rgba(25,25,25,0.1);
+  background-size: auto;
+  background-size: 100%;
+}
+.cuadhor{
+  background-color: rgba(25,25,25,0.5);
+  background-size: cover;
+}
+.cuadvert{
+  background-color: rgba(25,25,25,0.5);
+  background-size: contain;
+}
+.neg{
+  background-color: rgba(25,25,25,1);
+}
+.nolink{
+  text-decoration: none !important;
+  color: black !important;
+}
