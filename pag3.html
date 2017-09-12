@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--pagina de referencia para el resto-->
 	<meta charset="utf-8">
 	<title>pagina</title>
+	<!--cambiar al final para carga mas rapida-->
 	<script src="js/jQuery.js"></script>
-	<script src="js/pooper.js"></script>
+	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/extra.css">
@@ -14,30 +14,38 @@
 	<div class="fondo" style="text-align: center;">
 	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
 	<!-- barra-->
-	<div class="row">
-          <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barri3">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse" id="barri3">
-                <ul class="nav navbar-nav">
-                  <li><a href="index.html">Principal</a></li>
-                  <li><a href="pag2.html">R2</a></li>
-                  <li><a href="pag3.html">R3</a></li>
-                </ul>
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+						<a class="navbar-brand">barra</a>
+						<button class="navbar-toggler" aria-expanded="true" aria-controls="barri3" arial-label="toggle navigation" type="button" data-toggle="collapse" data-target="#barri3">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+            <div class="navbar-nav mr-auto">
+              <div class="navbar-collapse collapse show" id="barri3">
+								<ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pag2.html">R2</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pag3.html">R3</a></li>
+									<li class="nav-item dropdown">
+										<a class="nav-link" id="pipo" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">barra</a>
+										<div class="dropdown-menu" aria-labelledby="pipo">
+											<a class="dropdown-item" href="https://www.google.cl">google</a><br>
+											<a class="dropdown-item" href="https://www.google.cl/search?q=pipo+alexelcapo&oq=pipo">pipo</a>
+										</div>
+									</li>
+									</ul>
               </div>
             </div>
           </nav>
-       </div>
 		<!-- cierre de barra -->
-    </div>
-    <div class="nolink">
-    <h1>pagina secundaria</h1>
+		<div class="row" style="padding: 10px;color: black;">
+			<div class="cuadhor" style="text-align: center;">
+				<h1>cuadro de ejemplo</h1>
+			</div>
+			<div clas="cuadvert" style="text-align: center;">
+				<h1>cuadro ejemplo 2</h1>
+			</div>
+			<h1>ejemplo de pagina</h1>
+		</div>
 	</div>
 </body>
 </html>
