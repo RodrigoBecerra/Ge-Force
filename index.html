@@ -2,56 +2,79 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>verificar</title>
+	<title>pagina</title>
+	<script src="js/accino.js"></script>
+	<!--cambiar al final para carga mas rapida-->
+	<script src="js/jQuery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/anime.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/extra.css">
 </head>
 <body>
-<h1>cargando</h1>
-<script>
-	if(navigator.userAgent.match(/Android/i)) {
-			//definiendo
-			document.body.style.backgroundColor = "black";
-			var lnk = document.createElement("a");
-			var lnk2 = document.createElement("a");
-			var txt = document.createElement("h1");
-			var re = document.createAttribute("href");
-			var re2 = document.createAttribute("href");
-			var stl = document.createAttribute("style");
-			var stl2 = document.createAttribute("style");
-			var stltxt = document.createAttribute("style");
-			var txtre = document.createTextNode("que usar:");
-			var txtre2 = document.createTextNode("version android");
-			var txtre3 = document.createTextNode("escritorio");
-			var salto = document.createElement("br");
+	<div class="fondo" style="text-align: center;">
+	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
+	<!-- barra-->
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+						<a class="navbar-brand">barra</a>
+						<button class="navbar-toggler" aria-expanded="true" aria-controls="barri3" arial-label="toggle navigation" type="button" data-toggle="collapse" data-target="#barri3">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+            <div class="navbar-nav mr-auto">
+              <div class="navbar-collapse collapse" id="barri3">
+								<ul class="navbar-nav mr-auto">
+                 				 <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" id="año" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">año</a>
+										<div class="dropdown-menu" aria-labelledby="año">
+											<a class="dropdown-item" id='a0' onclick="cambnomhor(1,0)" >año 1</a><br>
+											<a class="dropdown-item" id='a1' onclick="cambnomhor(2,0)" >año 2</a><br>
+											<a class="dropdown-item" id='a2' onclick="cambnomhor(3,0)" >año 3</a><br>
+											<a class="dropdown-item" id='a3' onclick="cambnomhor(4,0)" >año 4</a><br>
+											<a class="dropdown-item" id='a4' onclick="cambnomhor(5,0)" >año 5</a>
+										</div>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" id="seccion" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">seccion</a>
+										<div class="dropdown-menu" aria-labelledby="seccion">
+											<a class="dropdown-item" id='0' onclick="cambnomhor(0,1)" >seccion 1</a><br>
+											<a class="dropdown-item" id='1' onclick="cambnomhor(0,2)" >seccion 2</a><br>
+											<a class="dropdown-item" id='2' onclick="cambnomhor(0,3)" >seccion 3</a>
+										</div>
+									</li>
+				                    <li class="nav-item"><a class="nav-link" href="pag2.html">R2</a></li>
+                  					<li class="nav-item"><a class="nav-link" href="pag3.html">R3</a></li>
+								</ul>
+              </div>
+            </div>
+          </nav>
+		<!-- cierre de barra -->
+		<div style="padding: 10px;color: black;">
+			<div class="cuadhor" style="text-align: center;">
+				<h1 id="ti">espacio para dar a conocer el año y seccion</h1>
+			</div>
+			<div style="display: flex;flex-direction:row;">
+				<div clas="cuadvert" style="text-align: left; flex-basis:50%;">
+					<h1>aqui va el horario</h1>
+				</div><br>
+				<!--disqus-->
 
-			//ensamble
-			txt.appendChild(txtre);
-			re.value = "indexMobile.html";//a version mobil
-			re2.value = 'indexPC.html';
-			stl.value = 'font-size: xx-large;color: white;';
-			stl2.value = 'font-size: xx-large;color: white;';
-			stltxt.value = 'font-size: xx-large;color: white;';
-
-			lnk.appendChild(txtre2);
-			lnk2.appendChild(txtre3);
-			//para body
-			document.body.appendChild(txt);
-			document.body.appendChild(lnk);
-			document.body.appendChild(salto);
-			document.body.appendChild(lnk2);
-
-			//una vez mostrado
-			txt.setAttributeNode(stltxt);
-			lnk.setAttributeNode(re);
-			lnk.setAttributeNode(stl);
-			lnk2.setAttributeNode(re2);
-			lnk2.setAttributeNode(stl2);
-
-
-	}
-	else{
-		window.location = 'indexPC.html';
-	}
-</script>
+				<div id="disqus_thread" style="text-align: left; flex-basis:50%;"></div>
+				<script>
+				(function() {
+				var d = document, s = d.createElement('script');
+				s.src = 'https://petdi1.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				<!--fin disqus-->
+			</div>
+			<h1>.</h1>
+		</div>
+	</div>
 </body>
+<script id="dsq-count-scr" src="//petdi1.disqus.com/count.js" async></script>
 </html>
