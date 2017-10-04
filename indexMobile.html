@@ -4,29 +4,30 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>pagina</title>
-	<link rel="stylesheet" href="">
+	<script src="js/accinoCelu.js"></script>
+	<link rel="stylesheet" href="css/extraCelu.css">
 </head>
 <body>
   <!-- barra-->
-  <div style="color: black;">
-    <select>
-      <option value="a1">año 1</option>
-      <option value="a2">año 2</option>
-      <option value="a3">año 3</option>
-      <option value="a4">año 4</option>
-      <option value="a5">año 5</option>
+  <div class="colorn">
+    <select id="a" onchange="cambnomhor()">
+      <option value="1" selected>año 1</option>
+      <option value="2">año 2</option>
+      <option value="3">año 3</option>
+      <option value="4">año 4</option>
+      <option value="5">año 5</option>
     </select>
-    <select>
-      <option value="a1">seccion 1</option>
-      <option value="a2">seccion 2</option>
-      <option value="a3">seccion 3</option>
+    <select id="s" onchange="cambnomhor()">
+      <option value="1" selected>seccion 1</option>
+      <option value="2">seccion 2</option>
+      <option value="3">seccion 3</option>
     </select>
   </div>
   <!-- fin barra -->
-  <div style="background-color: rgba(25,25,25,0.5);background-size: cover;">
-    <h1>espacio para dar a conocer el año y seccion</h1>
+  <div class="colorg" style="background-size: contain;">
+    <h1 id="ti">espacio para dar a conocer el año y seccion</h1>
   </div>
-  <div style="background-color: rgba(25,25,25,0.5);background-size: contain;">
+  <div class="colorg" style="background-size: contain;">
     <h1>aqui va el horario</h1>
   </div>
 
