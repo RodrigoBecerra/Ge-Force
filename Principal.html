@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>pagina</title>
+	<title>Horarios UCT 2017</title>
 	<script src="js/accino.js"></script>
 	<!--cambiar al final para carga mas rapida-->
 	<script src="js/jQuery.js"></script>
@@ -10,11 +10,12 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/anime.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/extra.css">
+	<link rel="stylesheet" href="css/principal.css">
+	<link rel="shortcut icon" href="1.ico" >
 </head>
 <body>
 	<div class="fondo" style="text-align: center;">
-	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
+	<h1 class="titulo">Horarios UCT 2017</h1>
 	<!-- barra-->
           <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
@@ -48,8 +49,10 @@
 											<a class="dropdown-item" id='2' onclick="cambnomhor(0,3)" >Sección 3</a>
 										</div>
 									</li>
-									<form method="POST" action="buscador.php3"> 
-									<input type="text" name="T1" size="20"> 
+
+									<!--Buscador-->
+									<form class="busc" method="POST" action="buscador.php3"> 
+									<input  type="text" name="T1" size="20"> 
 									<input type="submit" value="Buscar" name="buscar"> 
 									</form> 
 								</ul>

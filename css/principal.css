@@ -1,0 +1,32 @@
+.titulo{
+  background-color: rgba(40,40,40,1);
+  color:white;
+}
+nav{
+  margin-top: 44px;
+}
+
+.busc{
+  margin-left: 500px;
+}
+.fondo{
+  background-color: rgba(25,25,25,0.1);
+  background-size: auto;
+  background-size: 100%;
+}
+.cuadhor{
+  background-color: rgba(25,25,25,0.5);
+  background-size: cover;
+  margin-top: 50px;
+}
+.cuadvert{
+  background-color: rgba(25,25,25,0.5);
+  background-size: contain;
+}
+.neg{
+  background-color: rgba(25,25,25,1);
+}
+.nolink{
+  text-decoration: none !important;
+  color: black !important;
+}
