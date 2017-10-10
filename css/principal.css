@@ -1,9 +1,8 @@
 .titulo{
   background-color: #01568E;
   color:white;
-}
-.logo{
-  margin-left: -100px;
+  font-family: comic;
+  text-align: center;
 }
 
 nav{
