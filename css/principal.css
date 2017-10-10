@@ -1,9 +1,13 @@
 .titulo{
-  background-color: rgba(40,40,40,1);
+  background-color: #01568E;
   color:white;
 }
+.logo{
+  margin-left: -100px;
+}
+
 nav{
-  margin-top: 44px;
+  margin-top: 100px;
 }
 
 .busc{
