@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>pagina</title>
-	<script src="js/accinoCelu.js"></script>
-	<link rel="stylesheet" href="css/extraCelu.css">
+	<script src="../js/accinoCelu.js"></script>
+	<link rel="stylesheet" href="../css/extraCelu.css">
 </head>
 <body>
   <!-- barra-->
@@ -45,5 +45,4 @@
   <!--fin disqus-->
   <h1>.</h1>
 </body>
-<script id="dsq-count-scr" src="//petdi1.disqus.com/count.js" async></script>
 </html>
