@@ -16,6 +16,9 @@
 	<div class="fondo" style="text-align: center;">
 	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
 		<?php require("menu.php")?>
+
+
+
 		<div style="padding: 10px;color: black;">
 			<div class="cuadhor" style="text-align: center;">
 				<h1 id="ti">espacio para dar a conocer el año y seccion</h1>
@@ -24,18 +27,13 @@
 				<div class="cuadvert" style="text-align: left; flex-basis:50%;">
 					<h1>aqui va el horario</h1>
 				</div><br>
-				<!--disqus-->
 
-				<div id="disqus_thread" style="text-align: left; flex-basis:50%;"></div>
-				<script>
-				(function() {
-				var d = document, s = d.createElement('script');
-				s.src = 'https://petdi1.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-				})();
-				</script>
-				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+				<!--disqus-->
+				<div id="disqus_thread" style="text-align: left; flex-basis:50%;margin: 0px 10px;"></div>
+				<?php require("disqus.php")?>
 				<!--fin disqus-->
 			</div>
 			<h1>.</h1>
