@@ -15,7 +15,7 @@
 <body>
 	<div class="fondo" style="text-align: center;">
 	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
-		<?php require("menu.php")?>
+		<?php require("menu.php") ?>
 
 
 
@@ -33,7 +33,7 @@
 
 				<!--disqus-->
 				<div id="disqus_thread" style="text-align: left; flex-basis:50%;margin: 0px 10px;"></div>
-				<?php require("disqus.php")?>
+				<?php require("disqus.php") ?>
 				<!--fin disqus-->
 			</div>
 			<h1>.</h1>
