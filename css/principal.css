@@ -1,17 +1,27 @@
-.titulo{
+/*.titulo{
   background-color: #01568E;
   color:white;
   font-family: comic;
-  text-align: center;
+}*/
+.logo{
+  margin-left: 20px;
 }
 
-nav{
-  margin-top: 100px;
+#barri3{/* Botones Inicio - año - seccion - Buscador*/
+  margin-left: 30px;
+}
+
+.nav-item{
+  margin-left: 20px;
 }
 
 .busc{
-  margin-left: 500px;
+  margin-left: 100px;
 }
+.cuerpo{
+  margin-top: 82px;
+}
+
 .fondo{
   background-color: rgba(25,25,25,0.1);
   background-size: auto;
@@ -20,7 +30,6 @@ nav{
 .cuadhor{
   background-color: rgba(25,25,25,0.5);
   background-size: cover;
-  margin-top: 50px;
 }
 .cuadvert{
   background-color: rgba(25,25,25,0.5);
@@ -33,3 +42,10 @@ nav{
   text-decoration: none !important;
   color: black !important;
 }
+.footer{
+  color: #cac8c8;
+  font-size: 20px;
+  text-align: center;
+  background-color: #343a40;
+}
+
