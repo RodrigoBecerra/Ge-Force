@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 	<a class="navbar-brand">barra</a>
 	<button class="navbar-toggler" aria-expanded="true" aria-controls="barri3" arial-label="toggle navigation" type="button" data-toggle="collapse" data-target="#barri3">

@@ -36,7 +36,7 @@
 				<?php require("disqus.php") ?>
 				<!--fin disqus-->
 			</div>
-			<h1>.</h1>
+			<h1>alt+a=ayuda</h1>
 		</div>
 	</div>
 </body>
