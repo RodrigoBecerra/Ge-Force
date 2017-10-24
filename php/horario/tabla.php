@@ -7,7 +7,7 @@ $dias = ["Lunes","Martes","Miercoles","Jueves","Viernes"];
 	echo "<h1>igual cantidad</h1>";
 }*/
 echo "
-<table border=2>
+<table border=2 align='center'>
 	<thead>
 		<tr>
 			<th>Hora</th>

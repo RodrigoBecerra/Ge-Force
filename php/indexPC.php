@@ -25,7 +25,6 @@
 			</div>
 			<div style="display: flex;flex-direction:row;">
 				<div class="cuadvert" style="text-align: left; flex-basis:50%;">
-					<h1>aqui va el horario</h1>
 					<?php require("horario\horario.php") ?>
 				</div><br>
 				<!--disqus-->

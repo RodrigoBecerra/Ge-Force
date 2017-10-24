@@ -12,8 +12,9 @@ var hora = new Array(cuenta);
 var sala = new Array(cuenta);
 var dia = new Array(cuenta);
 var año = new Array(cuenta);
+var seccion = new Array(cuenta);
 console.log('$cuenta');
-</script>";
+";
 while ($registro = $consulta->fetch_object()){  
 	//$nombre = ucfirst(strtolower($registro->nombre)); para usar en el futuro en los nombres
 	$hora = $registro->Hora ? $registro->Hora : "no hay hora disponible";
@@ -21,13 +22,11 @@ while ($registro = $consulta->fetch_object()){
 	$dia = $registro->Dia ? $registro->Dia : "no hay dia disponible";
 	$año = $registro->A ? $registro->A : "no hay año disponible";
 	$seccion = $registro->Seccion ? $registro->Seccion : "no hay Seccion disponible";
-	echo "<script>
-	hora[$cuent] = '$hora';
+	echo"hora[$cuent] = '$hora';
 	sala[$cuent] = '$sala';
 	dia[$cuent] = '$dia';
 	año[$cuent] = '$año';
-	seccion[$cuent] = '$seccion';
-	</script>";
+	seccion[$cuent] = '$seccion';";
 
 
 	//solo se muestra para ver todo en caso de necesitarlo
@@ -40,6 +39,7 @@ while ($registro = $consulta->fetch_object()){
 	";*/
 	$cuent++;
 }
+echo "</script>";
 require('tabla.php');
 
 
