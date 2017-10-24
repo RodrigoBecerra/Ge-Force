@@ -2,7 +2,6 @@
 $host = "127.0.0.1";
 $usuario = "root";
 $pass = "";
-$tabla = "horario";
 
 $conexion = mysqli_connect($host, $usuario, $pass)
                 OR die('No pudo conectarse: ' . mysqli_error($conexion));
@@ -12,7 +11,6 @@ class DB {
     private static $user  = 'root'; 
     private static $password   = '';
     private static $db   = 'horarios';
-    private static $port   = 3306;
     private static $con = NULL;
 
 
@@ -23,6 +21,12 @@ class DB {
 
     public static function pQRY($qry){
         return mysqli_query(DB::$con,$qry);
+    }
+
+    public static function cuenta(){
+        $c = DB::pQRY("SELECT COUNT(id_PL) AS cu FROM `horario`")
+            or die("No se encontro");
+        return $c;
     }
 
     public static function gethorario(){

@@ -26,41 +26,8 @@
 			<div style="display: flex;flex-direction:row;">
 				<div class="cuadvert" style="text-align: left; flex-basis:50%;">
 					<h1>aqui va el horario</h1>
-					
-
-
-
-
-					<?php
-						require('horario\conexion.php');
-					    DB::open();
-					    $consulta = DB::gethorario();
-					    DB::close();
-					    while ($registro = $consulta->fetch_object()){  
-					      //$nombre = ucfirst(strtolower($registro->nombre)); para usar en el futuro en los nombres
-					      $hora = $registro->Hora ? $registro->Hora : "no hay hora disponible";
-					      $sala = $registro->Sala ? $registro->Sala : "no hay sala";
-					      $dia = $registro->Dia ? $registro->Dia : "no hay dia disponible";
-					      //$año = $registro->Año ? $registro->Año : "no hay año disponible";     aun no funciona
-					      $seccion = $registro->Seccion ? $registro->Seccion : "no hay Seccion disponible";
-
-					      echo "<p>hora: $hora</p>
-								<p>sala: $sala</p>
-								<p>dia: $dia</p>
-								<p>seccion: $seccion</p>
-								<p>---------------------------------------</p>
-					      		";//<p>año: $año</p>
-					      }
-					 ?>
-
-
-
-
+					<?php require("horario\horario.php") ?>
 				</div><br>
-
-
-
-
 				<!--disqus-->
 				<div id="disqus_thread" style="text-align: left; flex-basis:50%;margin: 0px 10px;"></div>
 				<?php require("disqus.php") ?>
