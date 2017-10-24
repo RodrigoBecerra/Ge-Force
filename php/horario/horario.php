@@ -3,7 +3,7 @@ require('conexion.php');
 DB::open();
 $consulta = DB::gethorario();
 $cuenta = DB::cuenta()->fetch_object()->cu;
-$cuneta = intval ($cuenta);
+//$cuneta = intval ($cuenta);
 $cuent = 0;
 DB::close();
 echo "<script>
@@ -28,15 +28,19 @@ while ($registro = $consulta->fetch_object()){
 	año[$cuent] = '$año';
 	seccion[$cuent] = '$seccion';
 	</script>";
-	echo "<p>hora: $hora</p>
+
+
+	//solo se muestra para ver todo en caso de necesitarlo
+	/*echo "<p>hora: $hora</p>
 	<p>sala: $sala</p>
 	<p>dia: $dia</p>
 	<p>año: $año</p>
 	<p>seccion: $seccion</p>
 	<p>---------------------------------------</p>
-	";
+	";*/
 	$cuent++;
 }
+require('tabla.php');
 
 
 ?>

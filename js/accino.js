@@ -19,6 +19,7 @@
  	if(numa!=0 && nums!=0){
  		console.log("change");
  		document.getElementById("ti").innerHTML ="año "+numa+" seccion "+nums;
+ 		mostrarhor(numa,nums);
  		console.log("iz pz")
  	}
  	else{
@@ -35,7 +36,7 @@
  		alert("recuerde insertar el otro valor");
  	}
  }
- document.onkeyup=function(e){
+document.onkeyup=function(e){
   var e = e || window.event; // for IE to cover IEs window event-object
   if(e.altKey && e.which == 65) {
     alert('ayuda:\nnumero=seleccción rapida de año\nq,w,a =seleccción de rapida de sección\nrecuerde que en los comentarios estas opciones no funcionan\nsi no funciona clickee sobre algun lugar');
