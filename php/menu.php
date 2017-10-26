@@ -6,23 +6,27 @@
     <div class="navbar-nav mr-auto">
         <div class="navbar-collapse collapse" id="barri3">
 			<ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="indexPC.html">Principal</a></li>
+                <li class="nav-item"><a class="nav-link" href="indexPC.php">Principal</a></li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="año" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">año</a>
 					<div class="dropdown-menu" aria-labelledby="año">
-						<a class="dropdown-item" id='a0' onclick="cambnomhor(1,0)" >año 1</a><br>
-						<a class="dropdown-item" id='a1' onclick="cambnomhor(2,0)" >año 2</a><br>
-						<a class="dropdown-item" id='a2' onclick="cambnomhor(3,0)" >año 3</a><br>
-						<a class="dropdown-item" id='a3' onclick="cambnomhor(4,0)" >año 4</a><br>
-						<a class="dropdown-item" id='a4' onclick="cambnomhor(5,0)" >año 5</a>
+						<?php 
+						for($i=0;$i<5;$i++){
+							echo '<a class="dropdown-item" id="a$i" onclick="cambnomhor("',$i+1,'",0)" >año ',$i+1,'</a>';
+							if($i!=4){echo "<br>";};
+						}
+						?>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="seccion" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">seccion</a>
 						<div class="dropdown-menu" aria-labelledby="seccion">
-							<a class="dropdown-item" id='0' onclick="cambnomhor(0,1)" >seccion 1</a><br>
-							<a class="dropdown-item" id='1' onclick="cambnomhor(0,2)" >seccion 2</a><br>
-							<a class="dropdown-item" id='2' onclick="cambnomhor(0,3)" >seccion 3</a>
+							<?php
+							for($i=0;$i<3;$i++){
+								echo "<a class='dropdown-item' id='$i' onclick='cambnomhor(0,",$i+1,")' >seccion ",$i+1,"</a>";
+								if($i!=2){echo "<br>";};
+							}
+							?>
 						</div>
 				</li>
 			<!--<li class="nav-item"><a class="nav-link" href="pag2.html">R2</a></li>
