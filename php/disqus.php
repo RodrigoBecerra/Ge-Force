@@ -1,7 +1,11 @@
+
 <script>
+var disqus_config = function () {
+this.page.identifier = "comentario";
+};
 (function() {
 var d = document, s = d.createElement('script');
-s.src = 'https://petdi1.disqus.com/embed.js';
+s.src = 'https://integracion.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();

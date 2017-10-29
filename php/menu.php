@@ -10,9 +10,9 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="año" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">año</a>
 					<div class="dropdown-menu" aria-labelledby="año">
-						<?php 
+						<?php
 						for($i=0;$i<5;$i++){
-							echo '<a class="dropdown-item" id="a$i" onclick="cambnomhor("',$i+1,'",0)" >año ',$i+1,'</a>';
+							echo '<a class="dropdown-item" id="a$i" onclick="cambnomhor(',$i+1,',0)" >año ',$i+1,'</a>';
 							if($i!=4){echo "<br>";};
 						}
 						?>
