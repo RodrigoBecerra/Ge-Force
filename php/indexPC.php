@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>pagina</title>
+	<title>InfHorariosUCT</title>
 	<script src="../js/accino.js"></script>
 </head>
 <body>
 	<div class="fondo" style="text-align: center;">
 	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
-		<?php require("menu.php") ?>
-		<div style="padding: 10px;color: black;">
+		<?php require("menuNico.php") ?>
+		<div style="padding: 10px;color: black;margin-top: 35px;">
 			<div class="cuadhor" style="text-align: center;">
 				<h1 id="ti">espacio para dar a conocer el año y seccion</h1>
 			</div>
@@ -30,6 +30,8 @@
 	<script src="../js/bootstrap.js"></script>
 	<script src="../js/anime.js"></script>
 	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/extra.css">
+	<link rel="stylesheet" href="../css/principal.css">
+	<link rel="stylesheet" type="text/css" href="../css/tabla.css">
+	<link rel="shortcut icon" href="../1.ico" >
 </body>
 </html>

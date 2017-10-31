@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Horarios UCT 2017</title>
-	<script src="js/accino.js"></script>
-	<!--cambiar al final para carga mas rapida-->
-	<script src="js/jQuery.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/anime.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/principal.css">
-	<link rel="shortcut icon" href="1.ico" >
-	<script src="ajax.js"></script>
-</head>
-<body>
-
-	<div class="fondo">
-
-	<!-- barra-->
-          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          	<img class="logo" width="50px" height="50px" src="logo.png">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          	<img class="logo" width="50px" height="50px" src="../logo.png">
 						<a class="navbar-brand">Universidad Catolica<br> de Temuco</a>
 						<button class="navbar-toggler" aria-expanded="true" aria-controls="barri3" arial-label="toggle navigation" type="button" data-toggle="collapse" data-target="#barri3">
 							<span class="navbar-toggler-icon"></span>
@@ -28,7 +7,7 @@
             <div class="navbar-nav mr-auto">
               <div class="navbar-collapse collapse" id="barri3">
 								<ul class="navbar-nav mr-auto">
-                 				 <li class="nav-item"><a class="nav-link" href="Principal.html">Inicio</a></li>
+                 				 <li class="nav-item"><a class="nav-link" href="indexPC.php">Inicio</a></li>
 
                  				 <!--Año-->
 									<li class="nav-item dropdown">
@@ -61,32 +40,3 @@
               </div>
             </div>
           </nav>
-		<!-- cierre de barra -->
-		<div class="cuerpo" style="padding: 10px;color: black;">
-			<div class="cuadhor" style="text-align: center;">
-				<h1 id="ti">Inf Horarios UCT</h1><!--Espacio para dar a conocer año y seccion-->
-			</div>
-			<div style="display: flex;flex-direction:row;">
-				<div id="horario" class="cuadvert" style="text-align: left; flex-basis:50%;">
-					
-				</div><br>
-				<!--disqus-->
-
-				<div id="disqus_thread" style="text-align: left; flex-basis:50%;"></div>
-				<script>
-				(function() {
-				var d = document, s = d.createElement('script');
-				s.src = 'https://petdi1.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-				})();
-				</script>
-				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-				<!--fin disqus-->
-			</div>
-		</div>
-	</div>
-	<footer class="footer">Inf Horario UCT es un proyecto realizado por Ge-Force.</footer>
-</body>
-<script id="dsq-count-scr" src="//petdi1.disqus.com/count.js" async></script>
-</html>
