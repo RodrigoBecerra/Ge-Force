@@ -80,6 +80,19 @@ INSERT INTO `horario` (`Id_Horario`, `Id_Asignatura`, `Hora`, `Sala`, `Dia`, `Re
 ('34', 'INFO1128', '14:20-17:10', 'EB3-401', 'Jueves', 'No', 2, '1'),
 ('35', 'INFO1106', '9:40-12:00', 'LAB.1', 'Viernes', 'No', 2, '1'),
 ('36', 'INFO1130', '14:20-17:10', 'LAB.2', 'Viernes', 'No', 2, '1');
+('37', 'INFO1146', '16:40-18:20', 'EB-COMP', 'Miercoles', 'No', 5, '2'),
+('38', 'INFO1124', '12:40-14:20', 'EB3-202', 'Lunes', 'No', 4, '1'),
+('39', 'INFO1147', '15:50-18:20', 'LAB EB3-301', 'Lunes', 'No', 4, '2'),
+('40', 'INFO1148', '9:10-11:20', 'EB-204', 'Martes', 'No', 4, '1'),
+('41', 'INFO1111', '15:00-16:40','LAB.2', 'Martes', 'No', 4, '1'),
+('42', 'INFO1135', '16:40-18:20', 'LAB.2', 'Martes', 'No', 4, '1'),
+('43', 'INFO1148', '9:40-11:20', 'EB-204', 'Miercoles', 'No', 2, '1'),
+('44', 'INFO1130', '9:10-12:00', 'LAB.2', 'Miercoles', 'No', 2, '1'),
+('45', 'INFO1106', '15:00-17:50', 'EB-204', 'Miercoles', 'No', 2, '1'),
+('46', 'INFO1128', '14:20-17:10', 'EB3-401', 'Jueves', 'No', 2, '1'),
+('47', 'INFO1106', '9:40-12:00', 'LAB.1', 'Viernes', 'No', 2, '1'),
+('48', 'INFO1130', '14:20-17:10', 'LAB.2', 'Viernes', 'No', 2, '1');
+COMMIT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
