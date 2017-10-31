@@ -22,6 +22,7 @@
 				<?php require("disqus.php") ?>
 				<!--fin disqus-->
 			</div>
+			<!-- <?php require("horario/horaLocal.php") ?> -->
 			<h1>alt+a=ayuda</h1>
 		</div>
 	</div>
