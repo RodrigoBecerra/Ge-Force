@@ -43,12 +43,12 @@ CREATE TABLE `horario` (
 -- Volcado de datos para la tabla `horario`
 --
 
-INSERT INTO `horario` (`Id_Horario`, `Id_Pl`, `Hora`, `Sala`, `Dia`, `Repitencia`, `Año`, `Seccion`) VALUES
-('1', '1', '9:10-10:50', 'EB-204', 'Lunes', 'No', 3, '1'),
-('2', '1', '11:30-13:40', 'DIS-104', 'Lunes', 'No', 3, '1'),
-('3', '1', '10:20-11:20', 'EB3-504', 'Martes', 'No', 3, '1'),
-('4', '1', '11:30-13:10', 'LAB.1', 'Martes', 'No', 3, '1'),
-('5', '1', '15:00-17:10', 'LAB. EB- 3 Piso', 'Martes', 'No', 3, '1'),
+INSERT INTO `horario` (`Id_Horario`, `Id_Asignatura`, `Hora`, `Sala`, `Dia`, `Repitencia`, `Año`, `Seccion`) VALUES
+('INFO1108', '', '9:10-10:50', 'EB-204', 'Lunes', 'No', 3, '1'),
+('INFO1143', '1', '11:30-13:40', 'DIS-104', 'Lunes', 'No', 3, '1'),
+('INFO1143', '1', '10:20-11:20', 'EB3-504', 'Martes', 'No', 3, '1'),
+('INFO1132', '1', '11:30-13:10', 'LAB.1', 'Martes', 'No', 3, '1'),
+('INFO1182', '1', '15:00-17:10', 'LAB. EB- 3 Piso', 'Martes', 'No', 3, '1'),
 ('6', '1', '9:40-12:00', 'SALA DE ESTUDIO', 'Miercoles', 'No', 3, '1'),
 ('7', '1', '9:10-10:50', 'EB3-202', 'Jueves', 'No', 3, '1'),
 ('8', '1', '15:00-16:40', 'LAB.1', 'Jueves', 'No', 3, '1'),
