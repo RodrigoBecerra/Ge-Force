@@ -1,0 +1,1 @@
+<div style="text-align:center;padding:1em 0;"> <h2><a style="text-decoration:none;" href="#"><span style="color:gray;">Hora actual</span></a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=&timezone=America%2FSantiago" width="100%" height="150" frameborder="0" seamless></iframe> </div>
