@@ -31,11 +31,11 @@
   }
 
   function horario(numa,nums){ //numa= año nums= seccion
-    console.log("cuenta=",cuenta);
-    console.log("año=",año);
-    /*for(var i=0;i<cuenta,i++){
-      console.log("hola");
-    }*/
+    for(var i=0;i<cuenta,i++){
+      if(año[i]==numa && seccion[i]==nums){
+        hora[i]
+      }
+    }
   }
 
   function camcolor(color,id){
