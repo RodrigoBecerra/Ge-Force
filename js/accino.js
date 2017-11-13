@@ -13,21 +13,35 @@
  }
 
  function cambnomhor(numa,nums){
-  if(numa!=0){
-    r[0]=numa;
+    if(numa!=0){
+      r[0]=numa;
+    }
+    if(nums!=0){
+      r[1]=nums;
+    }
+   	if(r[0]!=0 && r[1]!=0){
+   		document.getElementById("ti").innerHTML ="año "+r[0]+" seccion "+r[1];
+   		mostrarhor(r[0],r[1]);
+      horario(r[0],r[1]);
+   		console.log("iz pz");
+   	}
+    else{
+      alert("recuerde insertar el otro valor");
+    }
   }
-  if(nums!=0){
-    r[1]=nums;
+
+  function horario(numa,nums){ //numa= año nums= seccion
+    console.log("cuenta=",cuenta);
+    console.log("año=",año);
+    /*for(var i=0;i<cuenta,i++){
+      console.log("hola");
+    }*/
   }
- 	if(r[0]!=0 && r[1]!=0){
- 		document.getElementById("ti").innerHTML ="año "+r[0]+" seccion "+r[1];
- 		mostrarhor(r[0],r[1]);
- 		console.log("iz pz");
- 	}
-  else{
-    alert("recuerde insertar el otro valor");
+
+  function camcolor(color,id){
+    document.getElementById(id).style = "background-color: "+color;
+    console.log("id ",id," color ",color);
   }
-}
 
 document.onkeyup=function(e){
   var e = e || window.event; // for IE to cover IEs window event-object
