@@ -31,7 +31,7 @@
   }
 
   function horario(numa,nums){ //numa= año nums= seccion
-    for(var i=0;i<cuenta,i++){
+    for(var i=0;i<cuenta;i++){
       if(año[i]==numa && seccion[i]==nums){
         hora[i]
       }
