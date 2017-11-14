@@ -11,9 +11,9 @@
 		<?php require("menuNico.php") ?>
 		<div style="padding: 10px;color: black;margin-top: 35px;">
 			<div style="display: flex;flex-direction:row;">
-				<div class="cuadvert" style="text-align: left; flex-basis:50%;">
+				<div class="cuadvert" style="background-color:white; color: black;" "text-align: left; flex-basis:50%;">
 					<?php require("horario\horario.php") ?>
-				</div><br>
+				</div><br> 
 				<!--disqus-->
 				<div id="disqus_thread" style="text-align: left; flex-basis:50%;margin: 0px 10px;"></div>
 				<?php require("disqus.php") ?>
