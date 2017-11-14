@@ -27,9 +27,9 @@ for($i = 0; $i < 24; $i++){
 	for($j = 1; $j < 6; $j++){
 		$p = $j - 1;
 		//forma rapida de cachar cual es cual
-		echo "<td id='$dias[$p]$i'>$dias[$p]$i</td>";
+		//echo "<td id='$dias[$p]$i'>$dias[$p]$i</td>";
 		//se tiene que cambiar por el de abajo
-		//echo "<td id='$dias[$p]$i'></td>";
+		echo "<td id='$dias[$p]$i'></td>";
 	}
 	echo "</tr>";
 }

@@ -33,17 +33,19 @@
   }
 
   function horario(numa,nums){ //numa= año nums= seccion
+    console.log("inicio horario");
+    console.log("hora IB. ",horaIB.length);
     for(var i=0;i<cuenta;i++){
-      if(año[i]==numa && seccion[i]==nums){
-        for(var j; j < horaIB.length;j++){
+      if(String(año[i])==String(numa) && String(seccion[i])==String(nums)){
+        for(var j=0; j < horaIB.length;j++){
           h=hora[i].split("-");
-          if(horaIB[j]==h[0]){
+          if(String(horaIB[j])==String(h[0])){
             var sta = j;
-            while(horaFB[sta]!=h[1]){
-              mId=dia[i].split("");
-              mid=dia[0]+dia[1]+dia[2]+String(j);
+            while(String(horaFB[sta])!=String(h[1])){
+              var mId=dia[i].split("");
+              mId=mId[0]+mId[1]+mId[2]+String(j);
               datos = [id_Pl[i],sala[i]];
-              cambiarespacio(datos,mId);
+              cambiarespacio(datos,mId,"red");
               if(sta++ < horaIB.length){sta++;}
               else{break;}
             }
@@ -54,6 +56,7 @@
   }
 
   function cambiarespacio(d,id,color="red"){
+    console.log(id);
     document.getElementById(id).innerHTML = d;
     document.getElementById(id).style = "background-color: "+color;
     console.log("id ",id," color ",color);
