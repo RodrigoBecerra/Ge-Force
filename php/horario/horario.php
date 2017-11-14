@@ -1,5 +1,5 @@
 <div class="cuadhor" style="text-align: center;">
-	<h1 id="ti">espacio para dar a conocer el año y seccion</h1>
+	<h1 id="ti"></h1>
 </div>
 <?php
 require('conexion.php');
