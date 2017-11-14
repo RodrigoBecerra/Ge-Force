@@ -11,8 +11,15 @@
  var r = [0,0];
  console.log("accino");
 
- function mostrarhor(){
-
+ function limpiar(){
+   for(var i=0;i<5;i++){
+     for(var j=0;j < horaIB.length;j++){
+       var pid=dias[i]+String(j);
+       console.log("pid=",pid);
+       document.getElementById(pid).innerHTML ="";
+       document.getElementById(pid).style ="color: white;";
+     }
+   }
  }
 
  function cambnomhor(numa,nums){
@@ -24,6 +31,7 @@
     }
    	if(r[0]!=0 && r[1]!=0){
    		document.getElementById("ti").innerHTML ="año "+r[0]+" seccion "+r[1];
+      limpiar();
       horario(r[0],r[1]);
    		console.log("iz pz");
    	}
