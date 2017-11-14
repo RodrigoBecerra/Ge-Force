@@ -10,9 +10,6 @@
 	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
 		<?php require("menuNico.php") ?>
 		<div style="padding: 10px;color: black;margin-top: 35px;">
-			<div class="cuadhor" style="text-align: center;">
-				<h1 id="ti">espacio para dar a conocer el año y seccion</h1>
-			</div>
 			<div style="display: flex;flex-direction:row;">
 				<div class="cuadvert" style="text-align: left; flex-basis:50%;">
 					<?php require("horario\horario.php") ?>
