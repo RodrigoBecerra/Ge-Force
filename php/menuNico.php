@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          	<img class="logo" width="50px" height="50px" src="../logo.png">
-						<a class="navbar-brand">Universidad Catolica<br> de Temuco</a>
+          	<a href="indexPC.php"><img class="logo" width="50px" height="50px" src="../logo.png"></a>
+						<a href="indexPC.php" class="navbar-brand">Universidad Catolica<br> de Temuco</a>
 						<button class="navbar-toggler" aria-expanded="true" aria-controls="barri3" arial-label="toggle navigation" type="button" data-toggle="collapse" data-target="#barri3">
 							<span class="navbar-toggler-icon"></span>
 						</button>
-            <div class="navbar-nav mr-auto">
+            <div class="navbar-nav mr-au o">
               <div class="navbar-collapse collapse" id="barri3">
 								<ul class="navbar-nav mr-auto">
                  				 <li class="nav-item"><a class="nav-link" href="indexPC.php">Inicio</a></li>
@@ -32,10 +32,12 @@
 									</li>
 
 									<!--Buscador-->
-									<form class="busc" method="POST" action="buscador.php3"> 
-									<input  type="text" name="T1" size="20"> 
-									<input type="submit" value="Buscar" name="buscar"> 
-									</form> 
+									<form class="form-inline" method="POST" action="buscador.php3">
+    								<div class="form-group">
+      									<input type="text" class="form-control" name="T1" size="20">
+    								</div>
+    								<button type="submit" class="btn btn-default">Buscar</button>
+  									</form>
 								</ul>
               </div>
             </div>
