@@ -1,6 +1,3 @@
-<div class="cuadhor" style="text-align: center;">
-	<h1 id="ti"></h1>
-</div>
 <?php
 require('conexion.php');
 DB::open();
@@ -16,20 +13,23 @@ var sala = new Array(cuenta);
 var dia = new Array(cuenta);
 var año = new Array(cuenta);
 var seccion = new Array(cuenta);
+var id_Pl = new Array(cuenta);
 console.log('$cuenta');
 ";
-while ($registro = $consulta->fetch_object()){  
+while ($registro = $consulta->fetch_object()){
 	//$nombre = ucfirst(strtolower($registro->nombre)); para usar en el futuro en los nombres
 	$hora = $registro->Hora ? $registro->Hora : "no hay hora disponible";
 	$sala = $registro->Sala ? $registro->Sala : "no hay sala";
 	$dia = $registro->Dia ? $registro->Dia : "no hay dia disponible";
 	$año = $registro->A ? $registro->A : "no hay año disponible";
 	$seccion = $registro->Seccion ? $registro->Seccion : "no hay Seccion disponible";
+	$Id_Pl = $registro->Id_Pl ? $registro->Id_Pl : "no hay id_Pl";
 	echo"hora[$cuent] = '$hora';
 	sala[$cuent] = '$sala';
 	dia[$cuent] = '$dia';
 	año[$cuent] = '$año';
-	seccion[$cuent] = '$seccion';";
+	seccion[$cuent] = '$seccion';
+	id_Pl[$cuent] = '$Id_Pl';";
 
 
 	//solo se muestra para ver todo en caso de necesitarlo
