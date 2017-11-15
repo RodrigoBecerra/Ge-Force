@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $usuario = "id3622290_horarios";
-$pass = "nico.2012";
+$pass = "infhorauct";
 
 $conexion = mysqli_connect($host, $usuario, $pass)
                 OR die('No pudo conectarse: ' . mysqli_error($conexion));
@@ -9,7 +9,7 @@ $conexion = mysqli_connect($host, $usuario, $pass)
 class DB { 
     private static $server  = 'localhost';
     private static $user  = 'id3622290_horarios'; 
-    private static $password   = 'nico.2012';
+    private static $password   = 'infhorauct';
     private static $db   = 'id3622290_horarios';
     private static $con = NULL;
 
