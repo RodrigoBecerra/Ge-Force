@@ -1,0 +1,16 @@
+----------------------------HOST--------------------
+EMAIL = viconsmite3@gmail.com
+PASS = infhorauct
+LINK HOST = infhorariosuct.000webhostapp.com
+ADMIN HOST = https://es.000webhost.com/members/website/infhorariosuct/build 
+------------------------------------------------------
+-------------------------DB---------------------------
+LINK DB MYSQL = https://databases.000webhost.com/
+HOST DB = localhost
+NAME DB = id3622290_horarios
+USER = id3622290_horarios
+PASS = infhorauct
+------------------------------------------------------
+----------------------FILES----------------------------
+LINK FILES =https://files.000webhost.com/
+----------------------------------------------------
