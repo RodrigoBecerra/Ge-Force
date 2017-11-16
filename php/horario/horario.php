@@ -43,7 +43,16 @@ while ($registro = $consulta->fetch_object()){
 	$cuent++;
 }
 echo "</script>";
-require('tabla.php');
+<?php
+	$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
+	if(stripos($ua,'android') !== false) { // && stripos($ua,'mobile') !== false) {
+		//require('tabla.php');
+		exit();
+	}
+	else{
+		require('tabla.php');
+		exit();
+	}
 
 
 ?>
