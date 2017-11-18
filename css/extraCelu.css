@@ -5,20 +5,19 @@
 |creacion 3/10/2017                                                    |
 ------------------------------------------------------------------------
 */
-h1{
-  font-size: 400%;
+
+.logo{
+	margin-top: -12px;
 }
-select{
-  font-size: 250%;
-  background: rgb(25,25,25);
-  color: #fff;
+
+
+#titulo{
+	margin-top: -10px;
 }
-.colorn{
-  background-color: rgba(25,25,25,1);
-  background-size: cover;
-  grid-row: auto;
-  width: 100%;
-}
-.colorg{
-  background-color: rgba(25,25,25,0.5);
+
+#ti{
+	background-color: #004c80;
+	margin-top: -20px;
+	color: white;
+	text-align: center;
 }

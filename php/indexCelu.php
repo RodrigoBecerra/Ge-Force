@@ -3,17 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>pagina</title>
-	<script src="../js/accinoCelu.js"></script>
+	<title>Horarios</title>
+	<script src="../js/accino.js"></script>
 	<link rel="stylesheet" href="../css/extraCelu.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
   <?php require("menuCelu.php") ?>
+
+
+
   <div class="colorg" style="background-size: contain;">
-    <h1 id="ti">espacio para dar a conocer el año y seccion</h1>
+    <h4 id="ti">¿Qué desea ver?</h4>
   </div>
+
+
   <div class="colorg" style="background-size: contain;text-align: center;">
-    <?php require("horario\horario.php") ?>
+    
   </div>
 	<!--disqus-->
 	<div id="disqus_thread"></div>
