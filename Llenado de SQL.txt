@@ -1,6 +1,0 @@
-INSERT INTO `Horario`(`Id_As`, `Id_Pl`, `Asignatura`, `Departamento`, `Profesor`)VALUES ('INFO1132','2','Diseno de Software','Informatica','G.Contreras'); 
-INSERT INTO `Horario`(`Id_As`, `Id_Pl`, `Asignatura`, `Departamento`, `Profesor`)VALUES ('INFO1143','2','Calculo Intermedio','Matematicas','------------'); 
-INSERT INTO `Horario`(`Id_As`, `Id_Pl`, `Asignatura`, `Departamento`, `Profesor`)VALUES ('INFO1182','2','Ingles II','Ingles','-------------------------'); 
-INSERT INTO `Horario`(`Id_As`, `Id_Pl`, `Asignatura`, `Departamento`, `Profesor`)VALUES ('INFO1172','2','Taller de Integracion III','Informatica','J.Rojas'); 
-INSERT INTO `Horario`(`Id_As`, `Id_Pl`, `Asignatura`, `Departamento`, `Profesor`)VALUES ('INFO1108','2','Sistema de Computacion y Plataforma Tecnologica','Informatica','Alejandro Mellado'); 
-INSERT INTO `Horario`(`Id_As`, `Id_Pl`, `Asignatura`, `Departamento`, `Profesor`)VALUES ('INFO1144','2',' Elementos de Algebra Lineal para la Computacion','Informatica','----------'); 

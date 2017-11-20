@@ -1,5 +1,0 @@
-#Tabla plan
-`plan` (`Id_Pl`, `Plan`) VALUES ('1', '2'), ('2', '3');
-
-#Crear columnas Id_Pl y Semestre para la tabla semestres
-ALTER TABLE `semestre` ADD `Id_Pl` INT(2) NOT NULL AFTER `Id_Se`, ADD `Semestres` VARCHAR(12) NOT NULL AFTER `Id_Pl`; 
