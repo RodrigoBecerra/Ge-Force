@@ -7,19 +7,18 @@
 <?php
 // Conectarse al motor de Base de Datos
 include("../conex.inc");
-$busca=$_GET["T1"];
+$busca= $_GET["busca"];
 
 //Hacer la consulta
-$consulta = "Select * FROM Asignatura
-            WHERE Asignatura OR Profesor OR Repeticion LIKE $busca";
+$consulta = "Select * FROM asignatura WHERE Profesor LIKE ('$busca')";
+
 $respuesta = mysqli_query($db, $consulta);
-if(mysqli_num_rows($respuesta)==0) echo "Registro No encontrado";
+if(mysqli_num_rows($respuesta)==0) echo "Registro no encontrado";
 
 if($respuesta)
-
   //Mostramos la respuesta
 	while($fila = mysqli_fetch_object($respuesta))
-    	echo "$fila->Nombre $fila->Apellido $fila->Sexo $fila->FechaNacimiento $fila->Sueldo $fila->Departamento $fila->descripcion <br>";
+    	echo "$fila->Codigo $fila->Seccion $fila->Asignatura $fila->Profesor $fila->Sueldo $fila->Repeticion<br>";
 else
   echo "Error!!!!";
 ?>
