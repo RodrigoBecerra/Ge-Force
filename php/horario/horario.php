@@ -23,13 +23,13 @@ while ($registro = $consulta->fetch_object()){
 	$dia = $registro->Dia ? $registro->Dia : "no hay dia disponible";
 	$año = $registro->A ? $registro->A : "no hay año disponible";
 	$seccion = $registro->Seccion ? $registro->Seccion : "no hay Seccion disponible";
-	$Id_Pl = $registro->Id_Pl ? $registro->Id_Pl : "no hay id_Pl";
+	$Id_As = $registro->Id_As ? $registro->Id_As : "no hay id_As";
 	echo"hora[$cuent] = '$hora';
 	sala[$cuent] = '$sala';
 	dia[$cuent] = '$dia';
 	año[$cuent] = '$año';
 	seccion[$cuent] = '$seccion';
-	id_Pl[$cuent] = '$Id_Pl';";
+	id_As[$cuent] = '$Id_As';";
 
 
 	//solo se muestra para ver todo en caso de necesitarlo
