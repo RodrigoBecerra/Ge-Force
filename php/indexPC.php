@@ -9,7 +9,7 @@
 <body>
 	<div class="fondo" style="text-align: center;">
 	<h1 style="background-color: rgba(40,40,40,1);">titulo</h1>
-		<?php require("menuNico.php") ?>
+		<?php require("menuPC.php") ?>
 		<div style="padding: 10px;color: black;margin-top: 35px;">
 			<div style="display: flex;flex-direction:row;">
 				<div class="cuadvert" style="background-color:white; color: black;text-align: left; flex-basis:50%;">
