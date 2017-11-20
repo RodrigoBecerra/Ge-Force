@@ -13,7 +13,7 @@ var sala = new Array(cuenta);
 var dia = new Array(cuenta);
 var año = new Array(cuenta);
 var seccion = new Array(cuenta);
-var id_Pl = new Array(cuenta);
+var id_As = new Array(cuenta);
 console.log('$cuenta');
 ";
 while ($registro = $consulta->fetch_object()){
