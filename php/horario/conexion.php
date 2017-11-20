@@ -24,7 +24,7 @@ class DB {
     }
 
     public static function cuenta(){
-        $c = DB::pQRY("SELECT COUNT(id_PL) AS cu FROM `horario`")
+        $c = DB::pQRY("SELECT COUNT(id_As) AS cu FROM `horario`")
             or die("No se encontro");
         return $c;
     }
