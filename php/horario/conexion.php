@@ -30,7 +30,7 @@ class DB {
     }
 
     public static function gethorario(){
-        $consulta_resultados = DB::pQRY("SELECT * FROM `horario` ORDER BY `id_Ho`")
+        $consulta_resultados = DB::pQRY("SELECT * FROM `horario` ORDER BY `id_Horario`")
             or die("No se encontro");
         return $consulta_resultados;
     }
