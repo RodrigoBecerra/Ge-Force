@@ -1,10 +1,3 @@
-<!Doctype html>
-<html lang="es">
-<head>
-<meta charset="UTF-8" >
-</head>
-
-
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
           	<a href="indexPC.php"><img class="logo" width="50px" height="50px" src="../logo.png"></a>
 						<a href="indexPC.php" class="navbar-brand">Universidad Catolica<br> de Temuco</a>
@@ -49,4 +42,3 @@
               </div>
             </div>
           </nav>
-          </html>
