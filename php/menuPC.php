@@ -1,3 +1,10 @@
+<!Doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" >
+</head>
+
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
           	<a href="indexPC.php"><img class="logo" width="50px" height="50px" src="../logo.png"></a>
 						<a href="indexPC.php" class="navbar-brand">Universidad Catolica<br> de Temuco</a>
@@ -32,7 +39,7 @@
 									</li>
 
 									<!--Buscador-->
-									<form class="form-inline" method="GET" action="buscador.php">
+									<form class="form-inline" method="POST" action="buscador.php">
     								<div class="form-group">
       									<input type="text" class="form-control" name="busca" size="20">
     								</div>
@@ -42,3 +49,4 @@
               </div>
             </div>
           </nav>
+          </html>
