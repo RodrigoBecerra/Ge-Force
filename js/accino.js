@@ -52,7 +52,7 @@
             while(String(horaFB[sta])!=String(h[1])){
               var mId=dia[i].split("");
               mId=mId[0]+mId[1]+mId[2]+String(j);
-              datos = [id_Pl[i],sala[i]];
+              datos = [id_As[i],sala[i]];
               cambiarespacio(datos,mId,"red");
               if(sta++ < horaIB.length){sta++;}
               else{break;}
