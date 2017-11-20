@@ -32,7 +32,7 @@
 									</li>
 
 									<!--Buscador-->
-									<form class="form-inline" method="POST" action="buscador.php3">
+									<form class="form-inline" method="POST" action="buscador.php">
     								<div class="form-group">
       									<input type="text" class="form-control" name="T1" size="20">
     								</div>
