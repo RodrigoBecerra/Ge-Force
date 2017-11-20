@@ -19,8 +19,8 @@ NATURAL JOIN horario as ho  WHERE asig.Profesor LIKE ('%$busca%')";
 
 
 $respuesta = mysqli_query($db, $consulta);
-
-if($respuesta){
+$res1=mysqli_fetch_object($respuesta);
+if(isset($res1->Hora)){
   //Mostramos la respuesta
 	echo "<table class='table table-hover'>";
 	echo "<thead><tr><th>Codigo Asignatura</th> <th>Hora</th> <th>Seccion</th> <th>Asignatura</th> <th>Profesor</th> <th>Nivel</th> <th>Dia</th> <th>Repeticion</th></tr></thead><tbody>";
@@ -30,12 +30,10 @@ if($respuesta){
 
 	echo "</tbody></table>";
 }
-else{
-	echo "No se encontro el resultado.";
-}
 
 $respuesta2 = mysqli_query($db, $consulta2);
-if($respuesta2){
+$res2=mysqli_fetch_object($respuesta2);
+if(isset($res2->Hora)){
   //Mostramos la respuesta
 	echo "<table class='table'>";
 	echo "<thead><tr><th>Codigo Asignatura</th> <th>Hora</th> <th>Seccion</th> <th>Asignatura</th> <th>Profesor</th> <th>Nivel</th> <th>Dia</th> <th>Repeticion</th></tr></thead><tbody>";
@@ -44,9 +42,6 @@ if($respuesta2){
     }
 
 	echo "</tbody></table>";
-}
-else{
-	echo "No se encontro el resultado.";
 }
 ?>
 <a href="indexPC.php"><button class="btn btn-default">Volver a la pagina principal</button></a>
