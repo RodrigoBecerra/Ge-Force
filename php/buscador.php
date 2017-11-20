@@ -22,9 +22,6 @@ $respuesta = mysqli_query($db, $consulta);
 if(mysqli_num_rows($respuesta)==0)
 	echo "Registro no encontrado";
 
-$respuesta2 = mysqli_query($db, $consulta2);
-if(mysqli_num_rows($respuesta)==0)
-	echo "Registro no encontrado";
 
 if($respuesta){
   //Mostramos la respuesta
@@ -39,6 +36,11 @@ if($respuesta){
 else{
 	echo "No se encontro el resultado.";
 }
+
+
+$respuesta2 = mysqli_query($db, $consulta2);
+if(mysqli_num_rows($respuesta)==0)
+	echo "Registro no encontrado";
 
 if($respuesta2){
   //Mostramos la respuesta
