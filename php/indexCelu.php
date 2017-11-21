@@ -18,6 +18,7 @@
 
   <div class="colorg" style="background-size: contain;">
     <h4 id="ti">seleccione arriba el año y seccion.</h4>
+    <!-- no tocar esto --><div id="ins"></div>
   </div>
 
 
