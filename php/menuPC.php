@@ -35,9 +35,9 @@
 									
 									<div class="form-inline">
     									<div class="form-group">
-      										<input type="text" class="form-control" id="busca" size="20">
+      										<input type="text" class="form-control" id="buscaPC" size="20">
     									</div>
-    									<input id="ID_Buscar" type="submit" class="btn btn-default" value="Buscar">
+    									<input id="ID_BuscarPC" type="submit" class="btn btn-default" value="Buscar">
     								</div>
   									
 								</ul>

@@ -11,8 +11,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
         </button>
-        <input type="text" id="busca">
-        <button id="ID_Buscar" type="submit" class="btn btn-default">Buscar</button>
+        <input type="text" id="buscaCELU">
+        <button id="ID_BuscarCELU" type="submit" class="btn btn-default">Buscar</button>
       </div>
 
 
