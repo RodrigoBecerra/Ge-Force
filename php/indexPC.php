@@ -13,7 +13,7 @@
 		<div style="padding: 10px;color: black;margin-top: 35px;">
 			<div style="display: flex;flex-direction:row;">
 				<div id="contenido" class="cuadvert" style="background-color:white; color: black;text-align: left; flex-basis:50%;">
-					<?php require("horario\horario.php") ?>
+					<?php require("horario/horario.php") ?>
 				</div><br> 
 				<!--disqus-->
 				<div id="disqus_thread" style="text-align: left; flex-basis:50%;margin: 0px 10px;"></div>

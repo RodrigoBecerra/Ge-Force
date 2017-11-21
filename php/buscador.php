@@ -53,7 +53,7 @@ $respuesta2 = mysqli_query($db, $consulta2);
 $res2=mysqli_fetch_object($respuesta2);
 if(isset($res2->Hora)){
   //Mostramos la respuesta
-	echo "<table class='table'>";
+	echo "<table class='table tabusca'>";
 	echo "<thead><tr><th>Codigo Asignatura</th> <th>Hora</th> <th>Sala</th> <th>Seccion</th> <th>Asignatura</th> <th>Profesor</th> <th>Nivel</th> <th>Dia</th> </tr></thead><tbody>";
 	while($fila = mysqli_fetch_object($respuesta2)){
     	echo "<tr><th>$fila->Id_As</th> <th>$fila->Hora</th> <th>$fila->Sala</th> <th>$fila->Id_Se</th> <th>$fila->Asignatura</th><th>$fila->Profesor</th> <th>$fila->A</th> <th>$fila->Dia</th> </tr>";
@@ -67,7 +67,7 @@ $respuesta3 = mysqli_query($db, $consulta3);
 $res3=mysqli_fetch_object($respuesta3);
 if(isset($res3->Hora)){
   //Mostramos la respuesta
-	echo "<table class='table'>";
+	echo "<table class='table tabusca'>";
 	echo "<thead><tr><th>Codigo Asignatura</th> <th>Hora</th> <th>Sala</th> <th>Seccion</th> <th>Asignatura</th> <th>Profesor</th> <th>Nivel</th> <th>Dia</th> </tr></thead><tbody>";
 	while($fila = mysqli_fetch_object($respuesta3)){
     	echo "<tr><th>$fila->Id_As</th> <th>$fila->Hora</th> <th>$fila->Sala</th> <th>$fila->Id_Se</th> <th>$fila->Asignatura</th><th>$fila->Profesor</th> <th>$fila->A</th> <th>$fila->Dia</th> </tr>";
@@ -80,7 +80,7 @@ $respuesta4 = mysqli_query($db, $consulta4);
 $res4=mysqli_fetch_object($respuesta4);
 if(isset($res4->Hora)){
   //Mostramos la respuesta
-	echo "<table class='table'>";
+	echo "<table class='table tabusca'>";
 	echo "<thead><tr><th>Codigo Asignatura</th> <th>Hora</th> <th>Sala</th> <th>Seccion</th> <th>Asignatura</th> <th>Profesor</th> <th>Nivel</th> <th>Dia</th> </tr></thead><tbody>";
 	while($fila = mysqli_fetch_object($respuesta4)){
     	echo "<tr><th>$fila->Id_As</th> <th>$fila->Hora</th> <th>$fila->Sala</th> <th>$fila->Id_Se</th> <th>$fila->Asignatura</th><th>$fila->Profesor</th> <th>$fila->A</th> <th>$fila->Dia</th> </tr>";
@@ -93,7 +93,7 @@ $respuesta5 = mysqli_query($db, $consulta5);
 $res5=mysqli_fetch_object($respuesta5);
 if(isset($res5->Hora)){
   //Mostramos la respuesta
-	echo "<table class='table'>";
+	echo "<table class='table tabusca'>";
 	echo "<thead><tr><th>Codigo Asignatura</th> <th>Hora</th> <th>Sala</th> <th>Seccion</th> <th>Asignatura</th> <th>Profesor</th> <th>Nivel</th> <th>Dia</th> </tr></thead><tbody>";
 	while($fila = mysqli_fetch_object($respuesta5)){
     	echo "<tr><th>$fila->Id_As</th> <th>$fila->Hora</th> <th>$fila->Sala</th> <th>$fila->Id_Se</th> <th>$fila->Asignatura</th><th>$fila->Profesor</th> <th>$fila->A</th> <th>$fila->Dia</th> </tr>";
@@ -106,7 +106,7 @@ $respuesta6 = mysqli_query($db, $consulta6);
 $res6=mysqli_fetch_object($respuesta6);
 if(isset($res6->Hora)){
   //Mostramos la respuesta
-	echo "<table class='table'>";
+	echo "<table class='table tabusca'>";
 	echo "<thead><tr><th>Codigo Asignatura</th> <th>Hora</th> <th>Sala</th> <th>Seccion</th> <th>Asignatura</th> <th>Profesor</th> <th>Nivel</th> <th>Dia</th> </tr></thead><tbody>";
 	while($fila = mysqli_fetch_object($respuesta6)){
     	echo "<tr><th>$fila->Id_As</th> <th>$fila->Hora</th> <th>$fila->Sala</th> <th>$fila->Id_Se</th> <th>$fila->Asignatura</th><th>$fila->Profesor</th> <th>$fila->A</th> <th>$fila->Dia</th> </tr>";
