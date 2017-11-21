@@ -10,7 +10,7 @@ echo "<script>
 var cuenta = parseInt($cuenta);
 var hora = new Array(cuenta);
 var sala = new Array(cuenta);
-var dia = new Array(cuenta);
+var diacls = new Array(cuenta);
 var año = new Array(cuenta);
 var seccion = new Array(cuenta);
 var id_As = new Array(cuenta);
@@ -30,7 +30,7 @@ while ($registro = $consulta->fetch_object()){
 	$asig = $registro->Asignatura ? $registro->Asignatura : "no hay nombre de asignatura";
 	echo"hora[$cuent] = '$hora';
 	sala[$cuent] = '$sala';
-	dia[$cuent] = '$dia';
+	diacls[$cuent] = '$dia';
 	año[$cuent] = '$año';
 	seccion[$cuent] = '$seccion';
 	id_As[$cuent] = '$Id_As';

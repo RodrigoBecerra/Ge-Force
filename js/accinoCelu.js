@@ -6,16 +6,17 @@
  console.log("accinocelu");
 
  function mostrarhor(x,y,z){
+ 	 console.log(diacls);
  	ppeed = "<hr class='half-rule'/>";
    var dived = document.getElementById("ins"); //edicion del div
    console.log(x,"-",y);
    for(var i=0;i<cuenta;i++){
    		if(String(año[i])==String(x) && String(seccion[i])==String(y)){
-   			if(z==dia[i]){
+   			if(z==diacls[i]){
    				ppeed = ppeed+"<br><p>Sala: "+sala[i]+"</p><br><p>Hora: "+hora[i]+"</p><br><p>Asignatura: "+asig[i]+"</p><br><p>Profesor: "+profe[i]+"</p><br><hr class='half-rule'/>";
    			}
    			else if(z=="Todos"){
-   				ppeed = ppeed+"<br><p>Sala: "+sala[i]+"</p><br><p>Dia: "+dia[i]+"</p><br><p>Hora: "+hora[i]+"</p><br><p>Asignatura: "+asig[i]+"</p><br><p>Profesor: "+profe[i]+"</p><br><hr class='half-rule'/>";
+   				ppeed = ppeed+"<br><p>Sala: "+sala[i]+"</p><br><p>Dia: "+diacls[i]+"</p><br><p>Hora: "+hora[i]+"</p><br><p>Asignatura: "+asig[i]+"</p><br><p>Profesor: "+profe[i]+"</p><br><hr class='half-rule'/>";
    			}
    		}
    }
