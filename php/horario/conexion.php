@@ -35,6 +35,12 @@ class DB {
         return $consulta_resultados;
     }
 
+    public static function celu(){
+    	$celuask = DB::pQRY("SELECT * FROM horario, asignatura WHERE horario.Id_As=asignatura.Id_As;")
+    		or die("no se encontro");
+    	return $celuask;
+    }
+
     public static function close(){
         DB::$con->close();
     }
