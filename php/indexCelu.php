@@ -15,7 +15,7 @@
 <body>
 <div id="contPrin">
   <?php require("menuCelu.php") ?>
-  <div><?php require("horario\horarioCelu.php") ?></div>
+  <?php require("horario/horarioCelu.php") ?>
 
 
   <div class="colorg" style="background-size: contain;">

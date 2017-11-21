@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          	<a href="indexPC.php"><img class="logo" width="50px" height="50px" src="../logo.png"></a>
-						<a href="indexPC.php" class="navbar-brand">Universidad Catolica<br> de Temuco</a>
+          	<a href="https://uct.cl/"><img class="logo" width="50px" height="50px" src="../logo.png"></a>
+						<a href="https://uct.cl/" class="navbar-brand">Universidad Catolica<br> de Temuco</a>
 						<button class="navbar-toggler" aria-expanded="true" aria-controls="barri3" arial-label="toggle navigation" type="button" data-toggle="collapse" data-target="#barri3">
 							<span class="navbar-toggler-icon"></span>
 						</button>
