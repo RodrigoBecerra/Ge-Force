@@ -29,7 +29,7 @@ $consulta5 = "SELECT * FROM asignatura as asig
 NATURAL JOIN horario as ho  WHERE ho.A LIKE ('%$busca%')";
 
 $consulta6 = "SELECT * FROM asignatura as asig
-NATURAL JOIN horario as ho  WHERE asig.RepeticionLIKE ('%$busca%')";
+NATURAL JOIN horario as ho  WHERE asig.Repeticion LIKE ('%$busca%')";
 
 $respuesta = mysqli_query($db, $consulta);
 $res1=mysqli_fetch_object($respuesta);
