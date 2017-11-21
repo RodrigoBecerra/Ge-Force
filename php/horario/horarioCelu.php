@@ -15,6 +15,7 @@ var año = new Array(cuenta);
 var seccion = new Array(cuenta);
 var id_As = new Array(cuenta);
 var profe = new Array(cuenta);
+var asig = new Array(cuenta);
 console.log('$cuenta');
 ";
 while ($registro = $consulta->fetch_object()){
@@ -26,13 +27,15 @@ while ($registro = $consulta->fetch_object()){
 	$seccion = $registro->Seccion ? $registro->Seccion : "no hay Seccion disponible";
 	$Id_As = $registro->Id_As ? $registro->Id_As : "no hay id_As";
 	$profe = $registro->Profesor ? $registro->Profesor : "no hay Profesor";
+	$asig = $registro->Asignatura ? $registro->Asignatura : "no hay nombre de asignatura";
 	echo"hora[$cuent] = '$hora';
 	sala[$cuent] = '$sala';
 	dia[$cuent] = '$dia';
 	año[$cuent] = '$año';
 	seccion[$cuent] = '$seccion';
 	id_As[$cuent] = '$Id_As';
-	profe[$cuent] = '$profe';";
+	profe[$cuent] = '$profe';
+	asig[$cuent] = '$asig';";
 	$cuent++;
 }
 echo "</script>";

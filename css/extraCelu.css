@@ -21,3 +21,9 @@
 	color: white;
 	text-align: center;
 }
+
+.half-rule { 
+    margin-left: 0;
+    text-align: left;
+    width: 50%;
+ }

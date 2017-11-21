@@ -2,16 +2,24 @@
  */
  var x = [0,0,0];
  var dia = "";
+ var ppeed = "";//para poner en el div
  console.log("accinocelu");
 
  function mostrarhor(x,y,z){
+ 	ppeed = "<hr class='half-rule'/>";
    var dived = document.getElementById("ins"); //edicion del div
    console.log(x,"-",y);
    for(var i=0;i<cuenta;i++){
    		if(String(año[i])==String(x) && String(seccion[i])==String(y)){
-   			//
+   			if(z==dia[i]){
+   				ppeed = ppeed+"<br><p>Sala: "+sala[i]+"</p><br><p>Hora: "+hora[i]+"</p><br><p>Asignatura: "+asig[i]+"</p><br><p>Profesor: "+profe[i]+"</p><br><hr class='half-rule'/>";
+   			}
+   			else if(z=="Todos"){
+   				ppeed = ppeed+"<br><p>Sala: "+sala[i]+"</p><br><p>Dia: "+dia[i]+"</p><br><p>Hora: "+hora[i]+"</p><br><p>Asignatura: "+asig[i]+"</p><br><p>Profesor: "+profe[i]+"</p><br><hr class='half-rule'/>";
+   			}
    		}
    }
+   dived.innerHTML=ppeed;
  }
 
  function dias(day){
