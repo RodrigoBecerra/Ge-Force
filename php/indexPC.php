@@ -12,8 +12,8 @@
 		<?php require("menuPC.php") ?>
 		<div style="padding: 10px;color: black;margin-top: 35px;">
 			<div style="display: flex;flex-direction:row;">
-				<div class="cuadvert" style="background-color:white; color: black;text-align: left; flex-basis:50%;">
-					<?php require("horario\horario.php") ?>
+				<div id="contenido" class="cuadvert" style="background-color:white; color: black;text-align: left; flex-basis:50%;">
+					<?php require("horario/horario.php") ?>
 				</div><br> 
 				<!--disqus-->
 				<div id="disqus_thread" style="text-align: left; flex-basis:50%;margin: 0px 10px;"></div>
@@ -32,5 +32,6 @@
 	<link rel="stylesheet" href="../css/principal.css">
 	<link rel="stylesheet" type="text/css" href="../css/tabla.css">
 	<link rel="shortcut icon" href="../1.ico" >
+	<script src="../js/ajaxjquery.js"></script>
 </body>
 </html>
