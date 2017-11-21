@@ -31,13 +31,15 @@
 										</div>
 									</li>
 
-									<!--Buscador-->
-									<form class="form-inline" method="POST" action="buscador.php">
-    								<div class="form-group">
-      									<input type="text" class="form-control" name="busca" size="20">
+									<!--Buscador
+									<form class="form-inline" method="POST" action="buscador.php">-->
+									<div class="form-inline">
+    									<div class="form-group">
+      										<input type="text" class="form-control" id="busca" size="20">
+    									</div>
+    									<input id="ID_Buscar" type="submit" class="btn btn-default" value="Buscar">
     								</div>
-    								<button type="submit" class="btn btn-default">Buscar</button>
-  									</form>
+  									<!--</form>-->
 								</ul>
               </div>
             </div>
