@@ -21,3 +21,11 @@
 	color: white;
 	text-align: center;
 }
+@media screen and (max-width: 800){
+	#contPrin{
+		width:100%;
+	}
+	aside {
+		width:100%;
+	}
+}
