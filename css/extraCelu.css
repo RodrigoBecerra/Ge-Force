@@ -21,17 +21,9 @@
 	color: white;
 	text-align: center;
 }
-@media screen and (max-width: 800){
-	#contPrin{
-		width:100%;
-	}
-	aside {
-		width:100%;
-	}
-}
+
 .half-rule { 
     margin-left: 0;
     text-align: left;
     width: 50%;
  }
-
