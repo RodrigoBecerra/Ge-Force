@@ -15,6 +15,19 @@
 	margin-top: -10px;
 }
 
+.form-inline{
+	display: inline-block;
+}
+#buscaCELU{
+	width: 200px;
+	margin-left: 20px;
+	margin-top: 10px;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 #ti{
 	background-color: #004c80;
 	margin-top: -20px;
