@@ -2,14 +2,18 @@
   <div class="container-fluid">
 
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      
+
+      <div>
+        
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="indexCelu.php"><img class="logo" width="45px" height="45px" src="../logo.png"></a>
-      <a href="indexCelu.php" id="titulo" class="navbar-brand">Universidad Catolica<br> de Temuco</a>
-    </div>
+        </button>
+        <input type="text" id="busca">
+        <button id="ID_Buscar" type="submit" class="btn btn-default">Buscar</button>
+      </div>
 
 
     <div class="collapse navbar-collapse" id="myNavbar">
