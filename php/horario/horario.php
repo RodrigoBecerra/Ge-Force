@@ -55,6 +55,8 @@ if($vurl != "no"){
 	</script>
 	";
 }
-
+else{
+	//news
+}
 
 ?>
