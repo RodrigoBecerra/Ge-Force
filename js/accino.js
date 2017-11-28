@@ -5,6 +5,10 @@
  var nums=0;
  var r = [0,0];
  console.log("accino");
+ //las dos siguientes son para usar el ? del php
+ var paginaactual = "http://localhost/dashboard/ElCuartel/Ge-Force/php/indexPC.php";
+ var usaopciones = 0;
+
 
  function limpiar(){
    for(var i=0;i<5;i++){
@@ -17,18 +21,26 @@
    }
  }
 
+ function holaXD(numa,nums){
+  limpiar();
+  horario(numa,nums);
+ }
+
  function cambnomhor(numa,nums,dd){
     if(numa!=0){
       r[0]=numa;
+      usaopciones = 1;
     }
     if(nums!=0){
       r[1]=nums;
+      usaopciones = 1;
     }
    	if(r[0]!=0 && r[1]!=0){
    		//document.getElementById("ti").innerHTML ="año "+r[0]+" seccion "+r[1];
-      limpiar();
-      horario(r[0],r[1]);
-   		console.log(dd);
+      if(usaopciones == 1){
+        usaopciones = 0;
+        location.href = paginaactual+"?v="+r[0].toString()+r[1].toString();
+      }
    	}
     else{
       alert("recuerde insertar el otro valor");
