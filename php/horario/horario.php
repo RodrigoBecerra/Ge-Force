@@ -57,6 +57,7 @@ if($vurl != "no"){
 }
 else{
 	//news
+	require('noticias/noticias.php');
 }
 
 ?>
