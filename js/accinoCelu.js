@@ -9,8 +9,8 @@
  function mostrarhor(x,y,z){
  	ppeed = "";
    var dived = document.getElementById("ins"); //edicion del div
-   console.log(x,"-",y);
-   proximacls(x,y);
+   //console.log(x,"-",y);
+   //proximacls(x,y);
    for(var i=0;i<cuenta;i++){
    	if(seccion[i].length > 1){
    		var sussec = seccion[i].split('-');
@@ -78,23 +78,52 @@
 		document.getElementById("ti").innerHTML = "seleccione en el otro campo tambien.";
 	}
  }
-
+/*
  function proximacls(numa,nums){
  	var d = new Date();
     var n = d.toString();
     d = n.split(" ");
     n = d[4].split(":");
+    n = n[0]+":"+n[1]; 
     d = dias(d[0]);
-    console.log(d);
+    console.log(n);
     var n2 = "";
     if(d != "Todos"){
-    	for(var i=0;i<cuenta;i++){
-    		n2 = horaIB[i].split(":");
-    		if(n[0] <= n2[0] && d == diacls[i]){
-    			return "<hr class='half-rule'/><div class='col-xl-6 thumbnail' style='background-color:rgba(255,20,10,0.6)'><p>proxima clase de este dia:</p><br><p>Sala: "+sala[i]+"</p><br><p>Hora: "+hora[i]+"</p><br><p>Asignatura: "+asig[i]+"</p><br><p>Profesor: "+profe[i]+"</p></div><hr class='half-rule'/>";
+    	for (var i = 0; i < 5; i++) {
+    		if(d == diacls[i]){//n[0] <= n2[0] && 
+    			var paraelceluav=rellenoavanzado(n);
+    			if(paraelceluav<299){
+    				return "<hr class='half-rule'/><div class='col-xl-6 thumbnail' style='background-color:rgba(255,20,10,0.6)'><p>proxima clase de este dia:</p><br><p>Sala: "+sala[paraelceluav]+"</p><br><p>Hora: "+hora[paraelceluav]+"</p><br><p>Asignatura: "+asig[paraelceluav]+"</p><br><p>Profesor: "+profe[paraelceluav]+"</p></div><hr class='half-rule'/>";
+    			}
+    			else{return "<hr class='half-rule'/>";}
     		}
     	}
     }else{
     	return "<hr class='half-rule'/>";
     }
  }
+
+ function rellenoavanzado(jh){
+    var extcjh = "";
+    var extcjh2 = 0;
+    cjh = 0;
+    jh=jh.split(":");
+    for (var h = cjh; h < horaIB.length; h++) {
+      extcjh = horaIB[h].split(":");
+      if(jh[0]==extcjh[0]){
+      	console.log("aviso existencia 1");
+        if(parseInt(jh[1])<parseInt(extcjh[1])){
+          return h;
+        }
+        else{
+        	if(parseInt(jh[0])<parseInt(extcjh[0])){
+        		extcjh2 = h;
+        	}
+        }
+      }
+    }
+    if(extcjh2 != 0){
+    	return h;
+    }
+    return 300;
+  }*/
