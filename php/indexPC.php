@@ -12,7 +12,8 @@
 		<?php require("menuPC.php") ?>
 		<div style="padding: 10px;color: black;margin-top: 35px;">
 			<div style="display: flex;flex-direction:row;">
-				<div id="contenido" class="cuadvert" style="background-color:white; color: black;text-align: left; flex-basis:50%;">
+				<div id="contenido" class="cuadvert" style="color: black;text-align: left; flex-basis:50%;">
+					<div id="ti_not"><h1>Informativo</h1></div><br>
 					<?php require("horario/horario.php") ?>
 				</div><br> 
 				<!--disqus-->

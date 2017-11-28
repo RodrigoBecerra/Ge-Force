@@ -39,10 +39,6 @@ a{
   background-color: rgba(25,25,25,0.5);
   background-size: cover;
 }
-.cuadvert{
-  background-color: rgba(25,25,25,0.1);
-  background-size: contain;
-}
 .neg{
   background-color: rgba(25,25,25,1);
 }
@@ -52,7 +48,12 @@ a{
 }
 
 #contenido{
-  background-color: rgba(25,25,25,0.1);
+  border-style: outset;
+  font-size: 13px;
+  padding: 30px;
+}
+#ti_not{
+  border-bottom: solid black 1px;
 }
 .tabusca{
   background-color: rgba(25,25,25,0.1);
