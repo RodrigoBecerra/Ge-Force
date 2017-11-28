@@ -1,8 +1,3 @@
-/*acciones parte de el grupo geforce
- *no deberia haber algun tipo de inseguridad
- *en caso de haber alguna parte insegura se tendra cambiar
- *por como esta echo ahora se puede acortar mucho
- */
  var horaIB = ["8:00","8:30","9:10","9:40","10:20","10:50","11:30","12:00","12:40","13:10","13:50","14:20","15:00","15:30","16:10","16:40","17:20","17:50","18:30","19:00","19:40","20:10","20:50","21:20"];
  var horaFB = ["8:30","9:00","9:40","10:10","10:50","11:20","12:00","12:30","13:10","13:40","14:20","14:50","15:30","16:00","16:40","17:10","17:50","18:20","19:00","19:30","20:10","20:40","21:20","21:50"];
  var dias = ["Lun","Mar","Mie","Jue","Vie"];
@@ -22,7 +17,7 @@
    }
  }
 
- function cambnomhor(numa,nums){
+ function cambnomhor(numa,nums,dd){
     if(numa!=0){
       r[0]=numa;
     }
@@ -33,7 +28,7 @@
    		//document.getElementById("ti").innerHTML ="año "+r[0]+" seccion "+r[1];
       limpiar();
       horario(r[0],r[1]);
-   		console.log("iz pz");
+   		console.log(dd);
    	}
     else{
       alert("recuerde insertar el otro valor");

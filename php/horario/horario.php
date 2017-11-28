@@ -43,7 +43,18 @@ while ($registro = $consulta->fetch_object()){
 	$cuent++;
 }
 echo "</script>";
-require('tabla.php');
+if(!empty($_GET['v'])){$vurl = $_GET['v'];}else{$vurl = "no";}
+
+if($vurl != "no"){
+	require('tabla.php');
+	echo "
+	<script>
+		var ysd = '$vurl';
+		var paratababla = ysd.split('');
+		cambnomhor(paratababla[0],paratababla[1],paratababla[2]);
+	</script>
+	";
+}
 
 
 ?>
