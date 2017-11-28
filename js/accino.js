@@ -8,7 +8,16 @@
  //las dos siguientes son para usar el ? del php
  var paginaactual = "http://localhost/dashboard/ElCuartel/Ge-Force/php/indexPC.php";
  var usaopciones = 0;
-
+ //dia actual
+ var d = new Date();
+ var n = d.toString();
+    d = n.split(" ");
+    if (d[0]=="Fri"){d="Vie";}
+    else if(d[0]=="Thu"){d="Jue";}
+    else if(d[0]=="Wed"){d="Mie";}
+    else if(d[0]=="Tue"){d="Mar";}
+    else if(d[0]=="Mon"){d="Lun";}
+    else{d="Todos";}
 
  function limpiar(){
    for(var i=0;i<5;i++){
@@ -48,8 +57,7 @@
   }
 
   function horario(numa,nums){ //numa= año nums= seccion
-    console.log("inicio horario");
-    console.log("hora IB. ",horaIB.length);
+    //marcardia();
     for(var i=0;i<cuenta;i++){
       if(String(año[i])==String(numa) && String(seccion[i])==String(nums)){
         for(var j=0; j < horaIB.length;j++){
@@ -57,10 +65,12 @@
           if(String(horaIB[j])==String(h[0])){
             var sta = j;
             while(String(horaFB[sta])!=String(h[1])){
+              console.log("mand")
               var mId=dia[i].split("");
               mId=mId[0]+mId[1]+mId[2]+String(j);
-              datos = [id_As[i],sala[i]];
-              cambiarespacio(datos,mId,"red");
+              datos = asig[i]+"<br>"+sala[i];
+              cambiarespacio(datos,mId,"rgb(255,230,230)");
+              cambiarprofe(mId,String(profe[i]));
               if(sta++ < horaIB.length){sta++;}
               else{break;}
             }
@@ -70,9 +80,18 @@
     }
   }
 
-  function cambiarespacio(d,id,color="red"){
-    console.log(id);
-    document.getElementById(id).innerHTML = d;
-    document.getElementById(id).style = "background-color: "+color;
-    console.log("id ",id," color ",color);
+  function marcardia(){
+    if(d != "Todos"){
+      for(var i=0;i<horaIB.length;i++){
+        cambiarespacio("",dia+String(i),"rgb(230,230,230)");
+      }
+    }
+  }
+
+  function cambiarespacio(datl,id,color="red"){
+      document.getElementById(id).innerHTML = datl;
+    document.getElementById(id).style = "background-color: "+color+";";
+  }
+  function cambiarprofe(id,profg){
+    document.getElementById(id).title=profg;
   }
