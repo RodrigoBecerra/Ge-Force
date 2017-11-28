@@ -48,7 +48,7 @@ a{
 }
 
 #contenido{
-  border-style: outset;
+  border-style: ridge;
   font-size: 13px;
   padding: 30px;
 }
