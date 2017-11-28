@@ -23,7 +23,6 @@
    for(var i=0;i<5;i++){
      for(var j=0;j < horaIB.length;j++){
        var pid=dias[i]+String(j);
-       console.log("pid=",pid);
        document.getElementById(pid).innerHTML ="";
        document.getElementById(pid).style ="color: white;";
      }
@@ -64,14 +63,13 @@
           h=hora[i].split("-");
           if(String(horaIB[j])==String(h[0])){
             var sta = j;
+            var mId=dia[i].split("");
             while(String(horaFB[sta])!=String(h[1])){
-              console.log("mand")
-              var mId=dia[i].split("");
-              mId=mId[0]+mId[1]+mId[2]+String(j);
+              mId=mId[0]+mId[1]+mId[2]+String(sta);
               datos = asig[i]+"<br>"+sala[i];
               cambiarespacio(datos,mId,"rgb(255,230,230)");
               cambiarprofe(mId,String(profe[i]));
-              if(sta++ < horaIB.length){sta++;}
+              if(sta+1 < horaFB.length){sta++;}
               else{break;}
             }
           }
