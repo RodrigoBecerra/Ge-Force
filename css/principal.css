@@ -52,6 +52,10 @@ a{
   font-size: 13px;
   padding: 30px;
 }
+#contenido img{
+  width: 150px;
+  height: 150px;
+}
 #ti_not{
   border-bottom: solid black 1px;
 }
@@ -64,5 +68,5 @@ a{
   color: #cac8c8;
   font-size: 20px;
   text-align: center;
-  background-color: #343a40;
+  background-color: blue;
 }

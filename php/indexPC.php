@@ -25,6 +25,8 @@
 			<h1 id="fin"<?php if(strpos($user_agent, 'Edge') !== FALSE){ echo" onload='edge(this)' onclick='edge(this)'>presiona";}else{echo"onload='chrome(this)' onclick='chrome(this)'>presiona";} ?></h1>
 		</div>
 	</div>
+	<footer style="background-color: rgba(25,25,25,0.7); color:rgba(10,10,10,0.7); text-align: center; height: 100px;"><br><br><h5>Create-by Ge-Force</h5></footer>
+
 	<script src="../js/jQuery.js"></script>
 	<script src="../js/popper.js"></script>
 	<script src="../js/bootstrap.js"></script>
