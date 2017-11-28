@@ -64,10 +64,11 @@
           if(String(horaIB[j])==String(h[0])){
             var sta = j;
             var mId=dia[i].split("");
+            h[1]=rellenoavanzado(h[1],sta);
             while(String(horaFB[sta])!=String(h[1])){
               mId=mId[0]+mId[1]+mId[2]+String(sta);
               datos = asig[i]+"<br>"+sala[i];
-              cambiarespacio(datos,mId,"rgb(255,230,230)");
+              cambiarespacio(datos,mId,"rgb(183,210,255)");
               cambiarprofe(mId,String(profe[i]));
               if(sta+1 < horaFB.length){sta++;}
               else{break;}
@@ -88,8 +89,28 @@
 
   function cambiarespacio(datl,id,color="red"){
       document.getElementById(id).innerHTML = datl;
-    document.getElementById(id).style = "background-color: "+color+";";
+    document.getElementById(id).Style = "background-color: "+color+";";
   }
   function cambiarprofe(id,profg){
     document.getElementById(id).title=profg;
+  }
+  function rellenoavanzado(jh,cjh){
+    var extcjh = "";
+    for (var h = cjh; h < horaFB.length; h++) {
+      if(jh==horaFB[h]){
+        return jh;
+      }
+    }
+    jh=jh.split(":");
+    for (var h = cjh; h < horaFB.length; h++) {
+      extcjh = horaFB[h].split(":");
+      if(jh[0]==extcjh[0]){
+        if(jh[1]<extcjh[0]){
+          return horaFB[h];
+        }
+        else{
+          return horaFB[h-1];
+        }
+      }
+    }
   }
