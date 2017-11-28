@@ -8,7 +8,7 @@ $dias = ["Lun","Mar","Mie","Jue","Vie"];
 }*/
 echo "
 <table border=2 align='center' class='table'>
-	<thead>
+	<thead Style='background-color: rgb(22,123,255);'>
 		<tr>
 			<th>Hora</th>
 ";
@@ -23,7 +23,7 @@ echo "
 
 ";
 for($i = 0; $i < 24; $i++){
-	echo "<tr><td>$horaIB[$i] $horaFB[$i]</td>";
+	echo "<tr><td Style='background-color: rgb(22,123,255);'>$horaIB[$i] $horaFB[$i]</td>";
 	for($j = 1; $j < 6; $j++){
 		$p = $j - 1;
 		//forma rapida de cachar cual es cual

@@ -89,7 +89,7 @@
 
   function cambiarespacio(datl,id,color="red"){
       document.getElementById(id).innerHTML = datl;
-    document.getElementById(id).Style = "background-color: "+color+";";
+    document.getElementById(id).style.backgroundColor = color;
   }
   function cambiarprofe(id,profg){
     document.getElementById(id).title=profg;
