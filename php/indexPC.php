@@ -4,7 +4,7 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>InfHorariosUCT</title>
 	<script src="../js/accino.js"></script>
-	<?php $user_agent = $_SERVER['HTTP_USER_AGENT']; if(strpos($user_agent, 'Edge') !== FALSE){echo "<script src='../js/edgepluss.js'></script>";} ?>
+	<?php $user_agent = $_SERVER['HTTP_USER_AGENT']; if(strpos($user_agent, 'Edge') !== FALSE){echo "<script src='../js/edgepluss.js'></script>";} else{echo "<script src='../js/chromepluss.js'></script>";} ?>
 </head>
 <body>
 	<div class="fondo" style="text-align: center;">
@@ -21,7 +21,7 @@
 				<!--fin disqus-->
 			</div>
 			<!-- <?php require("horario/horaLocal.php") ?> -->
-			<h1 id="fin"<?php if(strpos($user_agent, 'Edge') !== FALSE){ echo" onload='edge(this)' onclick='edge(this)'>presiona";}else{echo">.";} ?></h1>
+			<h1 id="fin"<?php if(strpos($user_agent, 'Edge') !== FALSE){ echo" onload='edge(this)' onclick='edge(this)'>presiona";}else{echo"onload='chrome(this)' onclick='chrome(this)'>presiona";} ?></h1>
 		</div>
 	</div>
 	<script src="../js/jQuery.js"></script>
