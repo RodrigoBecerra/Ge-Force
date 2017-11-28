@@ -2,7 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>InfHorariosUCT</title>
+	<title>InfHorariosUCT</title>	
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/principal.css">
+	<link rel="stylesheet" type="text/css" href="../css/tabla.css">
+	<link rel="shortcut icon" href="../1.ico" >
 	<script src="../js/accino.js"></script>
 	<?php $user_agent = $_SERVER['HTTP_USER_AGENT']; if(strpos($user_agent, 'Edge') !== FALSE){echo "<script src='../js/edgepluss.js'></script>";} else{echo "<script src='../js/chromepluss.js'></script>";} ?>
 </head>
@@ -31,10 +35,6 @@
 	<script src="../js/popper.js"></script>
 	<script src="../js/bootstrap.js"></script>
 	<script src="../js/anime.js"></script>
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/principal.css">
-	<link rel="stylesheet" type="text/css" href="../css/tabla.css">
-	<link rel="shortcut icon" href="../1.ico" >
 	<script src="../js/ajaxjquery.js"></script>
 </body>
 </html>
