@@ -51,7 +51,9 @@ if($vurl != "no"){
 	<script>
 		var ysd = '$vurl';
 		var paratababla = ysd.split('');
-		cambnomhor(paratababla[0],paratababla[1],paratababla[2]);
+		if(paratababla.length > 1){
+			holaXD(paratababla[0],paratababla[1]);
+		}
 	</script>
 	";
 }
